@@ -184,7 +184,7 @@
         </div>
         <!---------------- banner section end ------------------>
 
-        <!---------------- about section start ----------------->
+        <!-- -------------- about section start --------------- -->
         <div class="about_section layout_padding">
           <div class="container">
             <div class="row">
@@ -441,7 +441,7 @@
 
         <!------------------- Shop section end -------------------->
 
-        <!---------- testimonial section start ----------->
+        <!-- -------- testimonial section start --------- -->
         <div class="testimonial_section layout_padding">
           <div class="container">
             <div class="row">
@@ -549,7 +549,7 @@
         </div>
         <!-- testimonial section end -->
 
-        <!-------------- contact section start ------------->
+        <!-- ------------ contact section start ----------- -->
         <div class="contact_section layout_padding">
           <div class="container">
             <div class="row">
@@ -777,16 +777,13 @@
 
       // Get into touch
       function sendToGmail() {
-        // Hard-coded Admin Email
         const adminEmail = "akash.ibm121@gmail.com";
 
-        // Get values from the inputs
         const name = document.getElementById("userName").value;
         const phone = document.getElementById("userPhone").value;
         const candidateEmail = document.getElementById("userEmail").value;
         const message = document.getElementById("userMsg").value;
 
-        // Formatting the body so the Candidate's email is prominent
         const subject = `New Message from ${name}`;
         const bodyText = `Candidate Details:
         ----------------------------
@@ -797,15 +794,13 @@
         Message:
         ${message}`;
 
-        // Construct Gmail URL
-        const gmailUrl =
-          `https://mail.google.com/mail/?view=cm&fs=1` +
-          `&to=${adminEmail}` +
-          `&su=${encodeURIComponent(subject)}` +
-          `&body=${encodeURIComponent(bodyText)}`;
+        // Using mailto: to trigger the native mobile app
+        const mailtoLink = `mailto:${adminEmail}?subject=${encodeURIComponent(
+          subject
+        )}&body=${encodeURIComponent(bodyText)}`;
 
-        // Open Gmail in a new tab
-        window.open(gmailUrl, "_blank");
+        // Open the system's default email client
+        window.location.href = mailtoLink;
       }
     </script>
     <script src="js/jquery.min.js"></script>
