@@ -857,14 +857,20 @@ figure {
   opacity: 0.15; /* Subtler look for modern UI */
 }
 
-.testimonial_section::after { left: 40px; top: 130px; }
-.testimonial_section::before { right: 40px; top: 130px; }
+.testimonial_section::after {
+  left: 40px;
+  top: 130px;
+}
+.testimonial_section::before {
+  right: 40px;
+  top: 130px;
+}
 
 /* The Main Testimonial Card */
 .testimonial_box {
-  display: flex;          /* Horizontal layout */
-  align-items: center;    /* Vertical center align */
-  gap: 30px;              /* Perfect spacing between image and text */
+  display: flex; /* Horizontal layout */
+  align-items: center; /* Vertical center align */
+  gap: 30px; /* Perfect spacing between image and text */
   width: 73%;
   margin: 0 auto;
   background-color: var(--bg-white);
@@ -882,8 +888,8 @@ figure {
 
 /* Image Styling */
 .client_img {
-  flex-shrink: 0;         /* Stops the circle from squashing */
-  width: 120px;           /* Consistent Size */
+  flex-shrink: 0; /* Stops the circle from squashing */
+  width: 120px; /* Consistent Size */
   height: 120px;
   border-radius: 50%;
   overflow: hidden;
@@ -893,12 +899,12 @@ figure {
 .client_img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* Crops image to fit the circle perfectly */
+  object-fit: cover; /* Crops image to fit the circle perfectly */
 }
 
 /* Text Container on the Right */
 .testimonial_content {
-  flex: 1;                /* Takes up the remaining space */
+  flex: 1; /* Takes up the remaining space */
   text-align: left;
 }
 
@@ -908,6 +914,15 @@ figure {
   line-height: 1.6;
   font-style: italic;
   margin-bottom: 15px;
+}
+
+.client_main {
+  display: flex;
+  justify-content: center; /* This centers the image and text horizontally */
+  align-items: center; /* Aligns image and text vertically */
+  gap: 20px; /* Space between image and text */
+  margin: 20px auto 0; /* Centers container and adds top spacing */
+  width: fit-content; /* Ensures container only takes up needed space */
 }
 
 .client_name {
@@ -935,7 +950,6 @@ figure {
     text-align: center;
   }
 }
-
 
 /* ============================================
    CONTACT SECTION
@@ -1056,6 +1070,10 @@ figure {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.map_main {
+  padding-top: 30px;
+}
+
 /* ============================================
    FOOTER SECTION
    ============================================ */
@@ -1075,7 +1093,6 @@ figure {
 
 .footer_text {
   width: 100%;
-  float: left;
   font-size: 30px;
   color: var(--bg-white);
   font-family: "Sen", sans-serif;
@@ -1230,8 +1247,10 @@ p.dummy_text {
   position: fixed;
   width: 65px;
   height: 65px;
-  bottom: 30px;
-  right: 30px;
+  bottom: env(safe-area-inset-bottom, 20px);
+  right: env(safe-area-inset-right, 16px);
+  max-width: 90vw;
+  max-height: 90vh;
   background: linear-gradient(
     135deg,
     var(--whatsapp-green),
@@ -1304,8 +1323,8 @@ p.dummy_text {
   .whatsapp-float {
     width: 55px;
     height: 55px;
-    bottom: 20px;
-    right: 20px;
+    bottom: 16px;
+    right: 16px;
   }
 
   .whatsapp-icon {
