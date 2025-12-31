@@ -86,6 +86,25 @@ a {
 }
 
 /* ------------LOGO STYLING-------------- */
+.logo {
+  display: flex;
+  align-items: center; /* vertical alignment */
+  gap: 8px; /* space between text and image */
+}
+
+@media (max-width: 768px) {
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.logo img {
+  height: 7em; /* matches heading size */
+  width: auto;
+}
+
 .logo h3 {
   color: var(--bg-white);
   font-size: 28px;
@@ -528,12 +547,45 @@ button {
   box-shadow: 0 6px 20px rgba(187, 200, 99, 0.4);
 }
 
-.about_img {
+.about_taital_box {
   width: 100%;
+  height: 100%;
   float: left;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about_sections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--border-light);
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-dark);
+  line-height: 1.5;
+  padding: 16px 14px;
+  box-shadow: 0 4px 10px rgba(49, 105, 78, 0.15);
+}
+
+.about_img {
+  width: 100%;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+  /* box-shadow: 0 10px 12px rgba(49, 105, 78, 0.18); */
 }
 
 /* ============================================
@@ -703,16 +755,25 @@ button {
   top: 15px;
   right: 20px;
   cursor: pointer;
-  font-size: 28px;
+  font-size: 20px;
   color: var(--text-gray);
+  line-height: 1;
   transition: all 0.3s ease;
+  pointer-events: auto;
   width: 35px;
   height: 35px;
+  user-select: none;
+  touch-action: manipulation;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background-color: var(--bg-light);
+  z-index: 1000;
+}
+
+.close i {
+  pointer-events: none;
 }
 
 .close:hover {
@@ -741,13 +802,73 @@ button {
   border-radius: 15px;
 }
 
-.hover01 figure:hover img {
+/* .hover01 figure:hover img {
   transform: scale(1.15);
-}
+} */
 
 .column {
   margin: 15px 0px 0;
   padding: 0;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* ------ i button ----- */
+.product-img {
+  position: relative;
+}
+
+.info-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%;
+  background: #2f6f4e;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.info-btn:hover {
+  background: var(--primary-orange);
+  color: var(--text-dark);
+  transform: scale(1.1);
+}
+
+.info-box {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  color: #fff;
+  padding: 16px;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 4;
+  overflow-y: auto;
+}
+
+.info-box h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: var(--primary-orange);
+}
+
+.info-box.active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 figure {
@@ -764,7 +885,7 @@ figure {
   float: left;
   text-align: center;
   color: var(--text-dark);
-  font-size: 22px;
+  font-size: 20px;
   padding-top: 20px;
   font-weight: bold;
 }
@@ -780,7 +901,7 @@ figure {
 }
 
 .read_bt_1 {
-  width: 170px;
+  width: 150px;
   margin: 0 auto;
   padding-top: 20px;
   display: flex;
@@ -789,7 +910,7 @@ figure {
 .read_bt_1 a {
   width: 100%;
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   background: linear-gradient(
     135deg,
     var(--primary-green),
@@ -1247,8 +1368,8 @@ p.dummy_text {
   position: fixed;
   width: 65px;
   height: 65px;
-  bottom: env(safe-area-inset-bottom, 20px);
-  right: env(safe-area-inset-right, 16px);
+  bottom: 20px;
+  right: 16px;
   max-width: 90vw;
   max-height: 90vh;
   background: linear-gradient(
@@ -1282,9 +1403,9 @@ p.dummy_text {
 }
 
 .whatsapp-icon {
-  width: 40px;
-  height: 40px;
-  filter: brightness(0) invert(1);
+  width: 50px;
+  height: 50px;
+  /* filter: brightness(0) invert(1); */
 }
 
 .whatsapp-float:hover {
@@ -1323,13 +1444,14 @@ p.dummy_text {
   .whatsapp-float {
     width: 55px;
     height: 55px;
-    bottom: 16px;
-    right: 16px;
+    position: fixed;
+    bottom: max(env(safe-area-inset-bottom), 20px);
+    right: max(env(safe-area-inset-right), 16px);
   }
 
   .whatsapp-icon {
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
   }
 }
 
