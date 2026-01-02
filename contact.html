@@ -140,7 +140,7 @@
                   <div class="map_main">
                     <div class="map-responsive">
                       <iframe
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.525877352516!2d79.94800527541081!3d27.63919712849414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399fad4a0d5e5003%3A0x31305585797adce5!2sKGN%20Agro%20(India)%20Exports!5e0!3m2!1sen!2sin!4v1767338508351!5m2!1sen!2sin"
                         width="600"
                         height="340"
                         frameborder="0"
@@ -233,7 +233,7 @@
                   <a href="#">
                     <span class="padding_left_10"
                       ><i class="fa fa-phone" aria-hidden="true"></i></span
-                    >(+91) 9889146656
+                    >(+91) 8302661803
                   </a>
                 </li>
                 <li>
@@ -249,7 +249,6 @@
           <div class="col-lg-4 col-sm-6">
             <div class="footer_main">
               <h3 class="footer_text">Find Us</h3>
-              <p class="dummy_text">more-or-less normal distribution</p>
               <div class="social_icon">
                 <ul>
                   <li>
@@ -294,6 +293,71 @@
       />
     </a>
     <!-- Javascript files-->
+    <script>
+      function openTC() {
+        document.getElementById("tcBox").classList.add("active");
+      }
+
+      function closeTC() {
+        document.getElementById("tcBox").classList.remove("active");
+      }
+
+      // Get into touch
+      function sendToGmail() {
+        const adminEmail = "info@kgnagroexports.com";
+
+        const name = document.getElementById("userName").value;
+        const phone = document.getElementById("userPhone").value;
+        const candidateEmail = document.getElementById("userEmail").value;
+        const message = document.getElementById("userMsg").value;
+
+        const subject = `New Message from ${name}`;
+        const bodyText = `Candidate Details:
+                ----------------------------
+                Name: ${name}
+                Email: ${candidateEmail}
+                Phone: ${phone}
+
+                Message:
+                ${message}`;
+
+        // Using mailto: to trigger the native mobile app
+        const mailtoLink = `mailto:${adminEmail}?subject=${encodeURIComponent(
+          subject
+        )}&body=${encodeURIComponent(bodyText)}`;
+
+        // Open the system's default email client
+        window.location.href = mailtoLink;
+      }
+
+      // =================== I button =======================================
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".product-img")) {
+          document
+            .querySelectorAll(".info-box.active")
+            .forEach((box) => box.classList.remove("active"));
+        }
+      });
+
+      document.querySelectorAll(".product-img").forEach((card) => {
+        const btn = card.querySelector(".info-btn");
+        const box = card.querySelector(".info-box");
+
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+
+          const isOpen = box.classList.contains("active");
+
+          document
+            .querySelectorAll(".info-box")
+            .forEach((b) => b.classList.remove("active"));
+
+          if (!isOpen) box.classList.add("active");
+        });
+
+        box.addEventListener("click", (e) => e.stopPropagation());
+      });
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
