@@ -314,19 +314,115 @@ button {
   color: var(--primary-orange);
 }
 
-.search_icon {
-  width: 100px;
-  float: right;
-  color: var(--bg-white);
-  text-align: right;
-  font-size: 18px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+/* ==========Dropdown=========== */
+.dropdown-menu-enhanced {
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 0;
+  min-width: 220px;
+  margin-top: 8px;
+  animation: fadeInDown 0.2s ease-out;
 }
 
-.search_icon:hover {
-  color: var(--primary-orange);
-  transform: scale(1.1);
+/* Smooth dropdown animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced dropdown items */
+.dropdown-menu-enhanced .dropdown-item {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #333;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  margin: 0 8px;
+}
+
+.dropdown-menu-enhanced .dropdown-item:hover {
+  background-color: var(--bg-light, #f8f9fa);
+  color: var(--dark-gray, #212529);
+  transform: translateX(4px);
+  padding-left: 24px;
+}
+
+.dropdown-menu-enhanced .dropdown-item:active {
+  background-color: #e9ecef;
+}
+
+/* Icon styling (replace with your icon library classes) */
+.dropdown-item i {
+  font-size: 18px;
+  width: 20px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.dropdown-item:hover i {
+  opacity: 1;
+}
+
+/* Divider styling */
+.dropdown-divider {
+  margin: 8px 12px;
+  border-top: 1px solid #e9ecef;
+}
+
+/* Enable Hover for Desktop (Min-width 992px matches Bootstrap lg breakpoint) */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+
+  /* Arrow indicator on hover */
+  .nav-item.dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-toggle::after {
+    transition: transform 0.2s ease;
+  }
+}
+
+/* Mobile improvements */
+@media (max-width: 991px) {
+  .dropdown-menu-enhanced {
+    border-radius: 0;
+    box-shadow: none;
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+    animation: none;
+  }
+
+  .dropdown-menu-enhanced .dropdown-item {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .dropdown-menu-enhanced .dropdown-item:hover {
+    transform: none;
+    padding-left: 20px;
+  }
+}
+
+/* Accessibility improvements */
+.dropdown-item:focus {
+  outline: 2px solid #007bff;
+  outline-offset: -2px;
+  background-color: var(--bg-light, #f8f9fa);
 }
 
 /* ============================================
@@ -362,33 +458,53 @@ button {
 .banner_taital_main {
   width: 100%;
   float: left;
-  padding-left: 90px;
+  padding-left: 90px; /* Note: High padding may squash content on mobile */
   padding-top: 90px;
   padding-bottom: 50px;
 }
 
 .banner_taital {
-  width: 55%;
-  float: left;
+  width: 100%; /* Changed from 55% to fit the Bootstrap column */
   font-size: 50px;
   color: var(--dark-gray);
   font-weight: bold;
   line-height: 1.2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
 }
 
-.banner_text {
-  width: 100%;
-  font-size: 16px;
-  color: var(--text-primary);
-  margin: 0px;
-  padding-top: 10px;
-  display: flex;
-  line-height: 1.6;
+/* List Styles */
+.banner_list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  color: var(
+    --text-primary
+  ); /* Changed from #ffffff to match your text theme */
+}
+
+.banner_list li {
+  font-size: 18px;
+  color: var(--dark-gray);
+  position: relative;
+  padding-left: 25px;
+}
+
+/* Optional: Adds a small bullet or dash since list-style is none */
+.banner_list li::before {
+  content: "•";
+  color: #4caf50; /* Organic Green color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 22px; /* Make the bullet slightly larger */
+  vertical-align: middle;
 }
 
 .banner_img {
-  width: 60%;
+  width: 100%; /* Ensure image fills its container */
+  max-width: 600px;
   text-align: center;
   margin: 0 auto;
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
@@ -862,8 +978,12 @@ button {
 .info-box h4 {
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 20px;
   color: var(--primary-orange);
+}
+
+.info-box li {
+  font-size: 1.1em;
 }
 
 .info-box.active {
