@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>About</title>
+    <title>Shop</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -32,6 +32,16 @@
     <link
       rel="stylesheet"
       href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <!-- font css -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,800;1,400&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
   <body>
@@ -64,7 +74,7 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="test.pdf" download>Verify Us</a>
+                <a class="nav-link" href="vagetables.html">Verify Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
@@ -78,47 +88,949 @@
     <!-- layout_border start -->
     <div class="container-fluid">
       <div class="layout_border">
-        <!-- about section start -->
-        <div class="about_section layout_padding" id="about">
+        <!-- vagetables section start -->
+        <div class="vagetables_section layout_padding">
           <div class="container">
+            <!-- -------------- T/c-------------- -->
             <div class="row">
-              <div class="col-md-12">
-                <h1 class="about_taital">About Us</h1>
+              <div class="col-sm-12">
+                <div class="top-line"></div>
+                <h1 class="order_taital">Order Samples Now!</h1>
+                <p class="order_text">
+                  *Please read and understand the terms and conditions carefully
+                  before placing a sample order.
+                </p>
+                <button class="tc-button" onclick="openTC()">T/C apply</button>
+                <div id="tcBox" class="tc-box">
+                  <div class="tc-content">
+                    <span class="close" onclick="closeTC()"
+                      ><i class="fa-solid fa-xmark"></i
+                    ></span>
+                    <h3>Terms & Conditions</h3>
+                    <p>
+                      • <u>Order Confirmation</u>: Orders will be processed only
+                      after receiving 50% advance payment. The remaining amount
+                      must be cleared before final dispatch.<br />
+                      • <u>Logistics & Shipping</u>: We will pack and prepare
+                      the products for shipment. All logistics, transportation,
+                      and port-handling arrangements are to be managed by the
+                      buyer.<br />
+                      • <u>Product Samples</u>: We provide free samples to
+                      buyers for quality testing and evaluation before placing
+                      bulk orders.<br />
+                      • <u>Quality Assurance</u>: Our products are sourced from
+                      reliable farms and processed with care to maintain natural
+                      quality. However, as agro-products are natural, minor
+                      variations in color or texture may occur. <br />
+                      • <u>Liability</u>: KGN Agro Exports is not responsible
+                      for any delays, damages, or losses that occur during
+                      transportation or external handling beyond our control.
+                    </p>
+                  </div>
+                </div>
+                <div class="bottom-line"></div>
               </div>
             </div>
-            <div class="about_section_2"></div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="about_img"><img src="images/about-img.png" /></div>
+            <!-- ------------Organic Manure------------ -->
+            <div class="courses_section_2">
+              <h1 class="vagetables_taital" id="manure">Organic Manure</h1>
+              <p class="vagetables_text">
+                Nourishes the soil naturally, creating healthier crops and a
+                greener future.
+              </p>
+              <div class="row">
+                <div class="col-md-3 course-card">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> 100% pure, sun-dried, finely powdered
+                          cow dung, naturally fermented.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Rich in organic
+                          carbon, lightweight, cost-effective, eco-friendly.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Landscaping, organic soil
+                          restoration, potting mixes.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> Low moisture, no chemicals,
+                          excellent soil aeration.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/cow.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">
+                    Plain Cow Dung Powder (Fine Grade)
+                  </h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                    >
+                      Get Quote
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3 course-card">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Premium vermicompost powder made using
+                          Eisenia fetida, triple-sieved for a smooth,
+                          debris-free texture.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Living fertilizer rich
+                          in beneficial microbes, enzymes, and plant growth
+                          hormones with fast nutrient release.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Luxury gardens, indoor plants,
+                          succulents, and urban terrace farming.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> High NPK content, rich humus, and
+                          completely odorless.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/vermi.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Organic Vermicompost Manure</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Nutrient-dense, agri-grade
+                          vermicompost manure, fully aged and matured to prevent
+                          root burn in crops.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Enhances soil
+                          structure and water retention, reducing irrigation
+                          needs and replacing chemical fertilizers.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Commercial farming, lawns, golf
+                          courses, and flower nurseries.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> High microbial content, long-lasting
+                          soil fertility, and easy-to-spread granular texture.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/premVermi.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">
+                    Premium Cow Dung <br />Vermicompost
+                  </h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Sun-dried cow dung cakes enriched with
+                          organic neem cake (Azadirachta indica) for enhanced
+                          nutrient value.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Dual-action formula
+                          that boosts nutrition while naturally repelling pests,
+                          termites, and soil fungi.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Organic farming and home gardening
+                          requiring natural plant protection.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> Fully biodegradable,
+                          termite-repellent, long shelf life, and easy to store.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/neem.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Neem-Enriched Cow Dung Powder</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6">
-                <p class="ipsum_text">
-                  As a fully certified Indian export enterprise, KGN Agro
-                  (Indian) Exports stands as a symbol of trust and regulatory
-                  compliance in the global agricultural trade. We take pride in
-                  our rigorous adherence to international export standards,
-                  ensuring every shipment meets the highest benchmarks of safety
-                  and authenticity. <br />Our product line is defined by
-                  farm-fresh integrity. We source our premium fruits and
-                  vegetables directly from verified Indian farms, ensuring they
-                  are harvested at peak ripeness and processed under strict
-                  hygienic conditions. <br /><br />Our organic range—including
-                  <b
-                    >certified vermicompost, nutrient-dense organic manure, and
-                    processed cow dung</b
-                  >
-                  powder—undergoes thorough quality testing to guarantee
-                  chemical-free soil enrichment. From the fertile fields of
-                  India to your doorstep, we provide fully authenticated,
-                  traceable, and premium-grade agro-products designed for the
-                  discerning global buyer who refuses to compromise on quality.
-                </p>
+            </div>
+
+            <!-- -------------Vegetables------------- -->
+            <div class="courses_section_2">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h1 class="vagetables_taital" id="veges">Fresh Vegetables</h1>
+                  <p class="vagetables_text">
+                    Nurture the roots, and the harvest will take care of itself.
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Premium Indian fresh red onions with
+                          deep red color, pungent aroma, and crisp texture,
+                          sourced from top agricultural regions.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Handpicked,
+                          well-dried, sprout-free onions with strong outer skin
+                          for long shelf life and global quality standards.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Culinary use, salads, food
+                          processing, and bulk international supply.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> Sizes from 25mm to 65mm+, ventilated
+                          mesh packaging (5kg–50kg), 100% natural and
+                          farm-fresh.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/onion.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Fresh Onion</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Premium Indian fresh potatoes with
+                          smooth texture, natural taste, and high nutritional
+                          value, sourced from fertile regions.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Carefully grown and
+                          harvested, free from soil, greening, sprouts, and
+                          damage, with excellent storage life.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Household cooking, commercial
+                          catering, and food processing including frying and
+                          chips.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> Firm flesh, thin skin, size-graded,
+                          packed in ventilated jute or mesh bags (25kg–50kg).
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/potato.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Fresh Potato</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Premium Indian fresh green chillies
+                          with vibrant color, intense heat, and spicy aroma,
+                          sourced directly from expert farmers.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Hand-sorted,
+                          peak-harvest chillies with firm texture, glossy skin,
+                          and consistent pungency.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Global cuisines, food processing, and
+                          bulk culinary supply.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> Multiple varieties (mild to extra
+                          hot), uniform sizing, ventilated CFB boxes or mesh
+                          bags (3.5kg–10kg).
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/Gchilli.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Fresh Green Chilli</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ------------Agro Commodities------------ -->
+            <div class="courses_section_2">
+              <h1 class="vagetables_taital" id="agro">Agro Commodities</h1>
+              <p class="vagetables_text">
+                Nourishes the soil naturally, creating healthier crops and a
+                greener future.
+              </p>
+              <div class="row">
+                <div class="col-md-3 course-card">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Premium Basmati rice with extra-long,
+                          slender grains and a rich, nutty aroma, aged for
+                          perfect cooking results.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Non-sticky, fluffy
+                          texture after cooking with consistent quality from
+                          selected paddy fields.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Biryanis, pilafs, and gourmet
+                          cuisines worldwide.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> Extra-long grain, aged rice,
+                          distinct aroma, and 100% sortex-cleaned.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/basmati.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Premium Basmati <br />Rice</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                    >
+                      Get Quote
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3 course-card">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Premium non-basmati rice with short to
+                          medium grains, offering balanced nutrition, taste, and
+                          value.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> High energy content,
+                          uniform grains, and strict quality checks ensuring
+                          impurity-free rice.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Daily consumption and industrial food
+                          processing.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> Uniform grain size, high nutritional
+                          value, long shelf life, and suitable for bulk global
+                          supply.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/Nbasmati.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Premium Non-Basmati <br />Rice</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Premium Indian wheat (Gehu) with bold
+                          golden grains, sourced from fertile fields and
+                          processed farm-fresh.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> High protein and
+                          gluten content, ideal for producing soft atta, breads,
+                          and bakery products.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Flour milling, rotis, breads, and
+                          premium bakery applications.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> High protein content,
+                          moisture-controlled storage, pesticide- free, and
+                          clean grains.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/wheat.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Premium Wheat <br />(Gehu)</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Premium yellow maize (Makka) with high
+                          starch content and natural color, sourced and dried
+                          under controlled conditions.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Strictly graded maize
+                          that is aflatoxin-free, impurity-free, and compliant
+                          with international export standards.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Food processing, starch production,
+                          and animal feed industries.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> Rich in carbohydrates, low moisture
+                          content, and supplied in bulk export packaging.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/maize.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Premium Maize <br />(Makka)</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ------Indian Spices & Herbs (Masale)------ -->
+            <div class="courses_section_2">
+              <h1 class="vagetables_taital" id="spices">
+                Indian Spices & Herbs (Masale)
+              </h1>
+              <p class="vagetables_text">
+                Nourishes the soil naturally, creating healthier crops and a
+                greener future.
+              </p>
+              <div class="row">
+                <div class="col-md-3 course-card">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> 100% pure, sun-dried, finely powdered
+                          cow dung, naturally fermented.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Rich in organic
+                          carbon, lightweight, cost-effective, eco-friendly.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Landscaping, organic soil
+                          restoration, potting mixes.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> Low moisture, no chemicals,
+                          excellent soil aeration.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/Tur.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Premium Turmeric <br />(Haldi)</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                    >
+                      Get Quote
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3 course-card">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Premium vermicompost powder made using
+                          Eisenia fetida, triple-sieved for a smooth,
+                          debris-free texture.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Living fertilizer rich
+                          in beneficial microbes, enzymes, and plant growth
+                          hormones with fast nutrient release.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Luxury gardens, indoor plants,
+                          succulents, and urban terrace farming.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> High NPK content, rich humus, and
+                          completely odorless.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/cumin.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">
+                    Premium Cumin Seeds <br />(Jeera)
+                  </h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Nutrient-dense, agri-grade
+                          vermicompost manure, fully aged and matured to prevent
+                          root burn in crops.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Enhances soil
+                          structure and water retention, reducing irrigation
+                          needs and replacing chemical fertilizers.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Commercial farming, lawns, golf
+                          courses, and flower nurseries.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> High microbial content, long-lasting
+                          soil fertility, and easy-to-spread granular texture.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/Rchilli.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">
+                    Premium Red Chilli <br />(Lal Mirch)
+                  </h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Sun-dried cow dung cakes enriched with
+                          organic neem cake (Azadirachta indica) for enhanced
+                          nutrient value.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Dual-action formula
+                          that boosts nutrition while naturally repelling pests,
+                          termites, and soil fungi.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Organic farming and home gardening
+                          requiring natural plant protection.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> Fully biodegradable,
+                          termite-repellent, long shelf life, and easy to store.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/dhaniyaP.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Premium Coriander <br />(Dhania)</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ----------------Oilseeds----------------- -->
+            <div class="courses_section_2">
+              <h1 class="vagetables_taital" id="oil">Oilseeds & Jaggery</h1>
+              <p class="vagetables_text">
+                Nourishes the soil naturally, creating healthier crops and a
+                greener future.
+              </p>
+              <div class="row">
+                <div class="col-md-3 course-card">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> 100% pure, sun-dried, finely powdered
+                          cow dung, naturally fermented.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Rich in organic
+                          carbon, lightweight, cost-effective, eco-friendly.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Landscaping, organic soil
+                          restoration, potting mixes.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> Low moisture, no chemicals,
+                          excellent soil aeration.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/sesame.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Premium Sesame Seeds <br />(Til)</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                    >
+                      Get Quote
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-3 course-card">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Premium vermicompost powder made using
+                          Eisenia fetida, triple-sieved for a smooth,
+                          debris-free texture.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Living fertilizer rich
+                          in beneficial microbes, enzymes, and plant growth
+                          hormones with fast nutrient release.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Luxury gardens, indoor plants,
+                          succulents, and urban terrace farming.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> High NPK content, rich humus, and
+                          completely odorless.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/groundnut.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">
+                    Premium Groundnuts <br />(Moongfali)
+                  </h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Nutrient-dense, agri-grade
+                          vermicompost manure, fully aged and matured to prevent
+                          root burn in crops.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Enhances soil
+                          structure and water retention, reducing irrigation
+                          needs and replacing chemical fertilizers.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Commercial farming, lawns, golf
+                          courses, and flower nurseries.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> High microbial content, long-lasting
+                          soil fertility, and easy-to-spread granular texture.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/mustard.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Premium Mustard <br />(Sarson)</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="hover01 column product-img">
+                    <button
+                      type="button"
+                      class="info-btn"
+                      aria-label="Product info"
+                    >
+                      i
+                    </button>
+
+                    <div class="info-box">
+                      <h4>Product Info</h4>
+                      <ul>
+                        <li>
+                          <b>Product:</b> Nutrient-dense, agri-grade
+                          vermicompost manure, fully aged and matured to prevent
+                          root burn in crops.
+                        </li>
+                        <li>
+                          <b>Why Importers Choose It:</b> Enhances soil
+                          structure and water retention, reducing irrigation
+                          needs and replacing chemical fertilizers.
+                        </li>
+                        <li>
+                          <b>Best For:</b> Commercial farming, lawns, golf
+                          courses, and flower nurseries.
+                        </li>
+                        <li>
+                          <b>Key Specs:</b> High microbial content, long-lasting
+                          soil fertility, and easy-to-spread granular texture.
+                        </li>
+                      </ul>
+                    </div>
+                    <figure><img src="images/prod/jaggery.PNG" /></figure>
+                  </div>
+                  <h3 class="harshal_text">Premium Jaggery <br />(Gud)</h3>
+                  <div class="read_bt_1">
+                    <a
+                      href="mailto:info@kgnagroexports.com?subject=Inquiry:%20Bulk%20Procurement%20Request%20for%20Organic%20Agro-Products%20|%20KGN%20Agro%20Exports&body=To,%0D%0AThe%20Sales%20%26%20Export%20Division,%0D%0AKGN%20Agro%20Exports%20(Shahabad,%20Hardoi).%0D%0A%0D%0ADear%20Team,%0D%0A%0D%0AWe%20are%20interested%20in%20exploring%20a%20potential%20business%20association%20with%20KGN%20Agro%20Exports%20for%20the%20procurement%20of%20high-quality%20agro-commodities.%20Based%20on%20your%20digital%20profile,%20we%20would%20like%20to%20receive%20detailed%20information%20regarding%20your%20current%20product%20lineup%20and%20wholesale%20pricing.%0D%0A%0D%0AKindly%20share%20the%20following%20details%20at%20your%20earliest%20convenience:%0D%0A1.%20Latest%20Price%20List%20(FOB/Ex-Mandi%20rates).%0D%0A2.%20Minimum%20Order%20Quantity%20(MOQ)%20for%20Cow%20Dung%20Powder%20/%20Rice%20/%20Vegetables.%0D%0A3.%20Technical%20Specifications%20Sheet%20(especially%20for%20Dehydrated%20Cow%20Dung%20Powder).%0D%0A4.%20Estimated%20Lead%20Time%20for%20bulk%20dispatch%20(approx.%2020-50%20Tons).%0D%0A%0D%0AWe%20would%20appreciate%20it%20if%20you%20could%20contact%20us%20back%20on%20this%20email%20or%20provide%20a%20direct%20contact%20number%20for%20a%20quick%20discussion.%0D%0A%0D%0ALooking%20forward%20to%20a%20long-term%20partnership.%0D%0A%0D%0ARegards,%0D%0AKGN%20Agro%20(India)%20Exports%0D%0AMahmand%20Road,%20Shahabad,%20Hardoi,%20Uttar%20Pradesh,%20India%20-%20241124%0D%0A(%2B91)%209889146656"
+                      target="_blank"
+                      >Get Quote</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- about section end -->
-        <!-- layout_border end -->
       </div>
     </div>
     <!-- footer section start -->
@@ -256,6 +1168,71 @@
       />
     </a>
     <!-- Javascript files-->
+    <script>
+      function openTC() {
+        document.getElementById("tcBox").classList.add("active");
+      }
+
+      function closeTC() {
+        document.getElementById("tcBox").classList.remove("active");
+      }
+
+      // Get into touch
+      function sendToGmail() {
+        const adminEmail = "akash.ibm121@gmail.com";
+
+        const name = document.getElementById("userName").value;
+        const phone = document.getElementById("userPhone").value;
+        const candidateEmail = document.getElementById("userEmail").value;
+        const message = document.getElementById("userMsg").value;
+
+        const subject = `New Message from ${name}`;
+        const bodyText = `Candidate Details:
+                ----------------------------
+                Name: ${name}
+                Email: ${candidateEmail}
+                Phone: ${phone}
+
+                Message:
+                ${message}`;
+
+        // Using mailto: to trigger the native mobile app
+        const mailtoLink = `mailto:${adminEmail}?subject=${encodeURIComponent(
+          subject
+        )}&body=${encodeURIComponent(bodyText)}`;
+
+        // Open the system's default email client
+        window.location.href = mailtoLink;
+      }
+
+      // =================== I button =======================================
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".product-img")) {
+          document
+            .querySelectorAll(".info-box.active")
+            .forEach((box) => box.classList.remove("active"));
+        }
+      });
+
+      document.querySelectorAll(".product-img").forEach((card) => {
+        const btn = card.querySelector(".info-btn");
+        const box = card.querySelector(".info-box");
+
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+
+          const isOpen = box.classList.contains("active");
+
+          document
+            .querySelectorAll(".info-box")
+            .forEach((b) => b.classList.remove("active"));
+
+          if (!isOpen) box.classList.add("active");
+        });
+
+        box.addEventListener("click", (e) => e.stopPropagation());
+      });
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
