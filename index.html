@@ -60,6 +60,16 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <span class="theme-toggle-icon">
+              <span class="sun-icon">☀️</span>
+              <span class="moon-icon">🌙</span>
+            </span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
@@ -107,7 +117,9 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Certificate_and_License.pdf" download>Verify Us</a>
+                <a class="nav-link" href="Certificate_and_License.pdf" download
+                  >Verify Us</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
@@ -1541,7 +1553,8 @@
                     ></a>
                   </li>
                   <li>
-                    <a href="#"
+                    <a
+                      href="https://www.instagram.com/kgnagroexports?igsh=emw3MzlkYjZvN2Zi"
                       ><i class="fa fa-instagram" aria-hidden="true"></i
                     ></a>
                   </li>
@@ -1562,7 +1575,7 @@
     </div>
     <!-- copyright section end -->
     <a
-      href="https://wa.me/918302661803?text=I%20am%20interested%20in%20your%20agro-products"
+      href="https://wa.me/918302661803?text=Hello%20KGN%20Agro%20Exports%2C%20%0A%0AI%20visited%20your%20website%20and%20I%20am%20interested%20in%20your%20products.%20Please%20share%20more%20details%20regarding%20the%20pricing%20and%20other%20details"
       class="whatsapp-float"
       target="_blank"
     >
@@ -1638,6 +1651,61 @@
 
         box.addEventListener("click", (e) => e.stopPropagation());
       });
+
+      // ============== Dark Theme ================
+      // Theme Toggle Functionality
+      (function () {
+        const themeToggle = document.getElementById("themeToggle");
+        const htmlElement = document.documentElement;
+
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem("theme") || "light";
+        htmlElement.setAttribute("data-theme", currentTheme);
+
+        // No need to update button text since we removed it
+
+        // Toggle theme on button click
+        themeToggle.addEventListener("click", function () {
+          const currentTheme = htmlElement.getAttribute("data-theme");
+          const newTheme = currentTheme === "light" ? "dark" : "light";
+
+          // Apply new theme
+          htmlElement.setAttribute("data-theme", newTheme);
+
+          // Save preference to localStorage
+          localStorage.setItem("theme", newTheme);
+
+          // Optional: Log the theme change (remove in production)
+          console.log("Theme switched to:", newTheme);
+        });
+
+        // Optional: Keyboard shortcut (Ctrl + Shift + D)
+        document.addEventListener("keydown", function (e) {
+          if (e.ctrlKey && e.shiftKey && e.key === "D") {
+            e.preventDefault();
+            themeToggle.click();
+          }
+        });
+
+        // Optional: Detect system preference
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+        // Only apply system preference if user hasn't set a preference
+        if (!localStorage.getItem("theme")) {
+          if (prefersDark.matches) {
+            htmlElement.setAttribute("data-theme", "dark");
+          }
+        }
+
+        // Listen for system theme changes
+        prefersDark.addEventListener("change", function (e) {
+          // Only auto-switch if user hasn't manually set a preference
+          if (!localStorage.getItem("theme")) {
+            const newTheme = e.matches ? "dark" : "light";
+            htmlElement.setAttribute("data-theme", newTheme);
+          }
+        });
+      })();
     </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -1647,6 +1715,3 @@
     <script src="js/slider-setting.js"></script>
   </body>
 </html>
-
-
-
