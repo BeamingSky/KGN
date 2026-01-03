@@ -33,12 +33,19 @@
       rel="stylesheet"
       href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
     />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- ----------------- header section starts ----------------- -->
     <div class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="logo">
+            <img src="images/logo102.png" alt="KGN Agro Logo" />
             <h3>KGN <span>A</span>gro (India) Exports</h3>
           </div>
           <button
@@ -52,6 +59,16 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <span class="theme-toggle-icon">
+              <span class="sun-icon">☀️</span>
+              <span class="moon-icon">🌙</span>
+            </span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
@@ -64,7 +81,9 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="test.pdf" download>Verify Us</a>
+                <a class="nav-link" href="Certificate_and_License.pdf" download
+                  >Verify Us</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
@@ -142,31 +161,7 @@
                     ><span class="angle_icon"
                       ><i class="fa fa-arrow-right" aria-hidden="true"></i
                     ></span>
-                    About</a
-                  >
-                </li>
-                <li>
-                  <a href="services.html"
-                    ><span class="angle_icon"
-                      ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    ></span>
-                    Services</a
-                  >
-                </li>
-                <li>
-                  <a href="domain.html"
-                    ><span class="angle_icon"
-                      ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    ></span>
-                    Domain</a
-                  >
-                </li>
-                <li>
-                  <a href="testimonial"
-                    ><span class="angle_icon"
-                      ><i class="fa fa-arrow-right" aria-hidden="true"></i
-                    ></span>
-                    Testimonial</a
+                    About Us</a
                   >
                 </li>
                 <li>
@@ -225,7 +220,9 @@
                     ></a>
                   </li>
                   <li>
-                    <a href="#"
+                    <a
+                      href="https://www.instagram.com/kgnagroexports?igsh=emw3MzlkYjZvN2Zi"
+                      target="_blank"
                       ><i class="fa fa-instagram" aria-hidden="true"></i
                     ></a>
                   </li>
@@ -256,6 +253,62 @@
       />
     </a>
     <!-- Javascript files-->
+    <script>
+      // ============== Dark Theme ================
+      // Theme Toggle Functionality
+      (function () {
+        const themeToggle = document.getElementById("themeToggle");
+        const htmlElement = document.documentElement;
+
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem("theme") || "light";
+        htmlElement.setAttribute("data-theme", currentTheme);
+
+        // No need to update button text since we removed it
+
+        // Toggle theme on button click
+        themeToggle.addEventListener("click", function () {
+          const currentTheme = htmlElement.getAttribute("data-theme");
+          const newTheme = currentTheme === "light" ? "dark" : "light";
+
+          // Apply new theme
+          htmlElement.setAttribute("data-theme", newTheme);
+
+          // Save preference to localStorage
+          localStorage.setItem("theme", newTheme);
+
+          // Optional: Log the theme change (remove in production)
+          console.log("Theme switched to:", newTheme);
+        });
+
+        // Optional: Keyboard shortcut (Ctrl + Shift + D)
+        document.addEventListener("keydown", function (e) {
+          if (e.ctrlKey && e.shiftKey && e.key === "D") {
+            e.preventDefault();
+            themeToggle.click();
+          }
+        });
+
+        // Optional: Detect system preference
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+        // Only apply system preference if user hasn't set a preference
+        if (!localStorage.getItem("theme")) {
+          if (prefersDark.matches) {
+            htmlElement.setAttribute("data-theme", "dark");
+          }
+        }
+
+        // Listen for system theme changes
+        prefersDark.addEventListener("change", function (e) {
+          // Only auto-switch if user hasn't manually set a preference
+          if (!localStorage.getItem("theme")) {
+            const newTheme = e.matches ? "dark" : "light";
+            htmlElement.setAttribute("data-theme", newTheme);
+          }
+        });
+      })();
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
